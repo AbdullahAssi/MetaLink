@@ -1,0 +1,14 @@
+
+.top_collection::-webkit-scrollbar-track{
+    background: white;
+    outline: 2px solid black;
+    border-radius: 10px;
+}
+.top_collection::-webkit-scrollbar-thumb{
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.top_collection::-webkit-scrollbar-button{
+    width: 10%;
+}

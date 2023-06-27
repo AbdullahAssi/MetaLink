@@ -1,0 +1,209 @@
+:root{
+  --oxford-blue-2: hsla(222, 47%, 11%, 1);
+  --cadet-grey: hsla(215, 20%, 65%, 1);
+  --linear-gradient-1: linear-gradient(to top left, hsla(0, 72%, 51%, 0.4) 0%, hsla(262, 83%, 58%, 0.4));
+  --linear-gradient-2: linear-gradient(to right, hsla(262, 83%, 58%, 1), hsla(0, 72%, 51%, 1));
+  --linear-gradient-3: linear-gradient(to top right, hsla(0, 72%, 51%, 0.4) 0%, hsla(262, 83%, 58%, 0.4),hsla(0, 72%, 51%, 1), hsla(262, 83%, 58%, 1));
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+input,
+button { display: block; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img { height: auto; }
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+
+html {
+  font-family: var(--ff-urbanist);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--oxford-blue-2);
+  color: var(--cadet-grey);
+}
+
+.body-bg-shape {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-image: var(--linear-gradient-1);
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.text-gradient{
+  display: inline;
+  background-image: var(--linear-gradient-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+
+body::-webkit-scrollbar {
+  width:.61rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(85, 33, 176, 0.646);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: var(--linear-gradient-3);
+  border-radius: 5px 0px 0px 5px;
+}

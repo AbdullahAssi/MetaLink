@@ -1,0 +1,36 @@
+.item_container{
+    display: flex;
+    flex-direction:column;;
+    max-width: 250px;
+    padding: 10px;
+    background-color: #0f1729;
+    border-radius: 10px;
+}
+.nft{
+    width: 100%;
+    border-radius: 10px;
+}
+.pp{
+    width: 25%;
+    margin-top: -20px;
+    background-color: #0f1729;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.verified_icon{
+    margin-top: -16px;
+    margin-left: 55px;
+}
+.verified_des{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.verified_Seller{
+    color: #7c3bed;
+    font-size: 16px;
+    font-weight: 500;
+}
+.verified_items{
+    font-size: 12px;
+}

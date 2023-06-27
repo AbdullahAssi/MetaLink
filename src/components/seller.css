@@ -1,0 +1,50 @@
+.seller_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 350px;
+    align-items: center;
+    background-color: #0f1729;
+    border-radius: 10px;
+}
+.verified{
+    margin-top: -25px;
+    margin-left: 82%;
+}
+.seller_profile{
+    width: 25%;
+}
+.seller_pp{
+    width: 100%;
+    border-radius: 10%;
+    flex-shrink: 0;
+}
+
+.seller_details{
+    font-size: 18px;
+}
+
+.adduser{
+    margin-right: 10px;
+    padding:15px;
+    cursor: pointer;
+    background-color: #112141;
+    border-radius: 50%;
+    box-shadow: inset;
+}
+.adduser:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 375px){
+    .seller_details{
+        font-size: 11px;
+    }
+    .adduser{
+        margin-right: 5px;
+        padding: 7px;
+    }
+    .verified{
+        width: 45%;
+    }
+}

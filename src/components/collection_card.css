@@ -1,0 +1,96 @@
+
+.collection_Card{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f1729;
+    padding: 1rem;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: 5s ease-in;
+    box-shadow: 00 5px 13px hsl(217, 19%, 27%);
+}
+.collection_Card:hover{
+    transform: translateY(-8px);
+}
+.nft_img{
+    width: 100%;
+    border-radius: 9px;
+    /* position: relative; */
+}
+.btn-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: #6b26d9;
+    width: 40%;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute; 
+    top: calc(-15% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 500ms ease-in;
+}
+.collection_Card:is(:hover,:focus) .btn-card{
+    top: 30%;
+}
+.btn-card:hover{
+    background-color: #6b26d9c7;
+}
+.profile{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.profile>img{
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 20%;
+}
+
+.des{
+    margin: 10px 0px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.price_bid{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d283a;
+    padding: 10px;
+    border-radius: 10px;
+}
+.price_title{
+    font-size: 20px;
+}
+.price{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+@media  (max-width:764px){
+    .price_title{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 18px;
+    }
+}
+
+@media  (max-width:564px){
+    .price_title{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .price{
+        font-size: 14px;
+    }
+}

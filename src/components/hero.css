@@ -1,0 +1,26 @@
+.Hero_container{
+    height: 80vh;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.hero_heading{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media  (max-width:764px){
+    .Hero_container{
+        margin-top: 18rem;
+        flex-direction: column-reverse;
+    }
+    .hero_heading{
+        text-align: start;
+        align-items: start;
+
+    }
+}
