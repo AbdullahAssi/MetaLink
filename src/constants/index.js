@@ -304,26 +304,30 @@ export const seller = [
 
 export const QA = [
     {
+        id:"q!",
         title: "What is MetaLink?",
         ans : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
         arrowDown : arrowdown,
         arrowUp : arrowup
     },
     {
+        id:"q2",
         title: "Do I need a designer to use Metalink?",
         ans : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
         arrowDown : arrowdown,
         arrowUp : arrowup
     },
     {
+        id:"q3",
         title: "What do i need to start selling?",
         ans : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
         arrowDown : arrowdown,
         arrowUp : arrowup
     },
     {
+        id:"q4",
         title: "What happens when i recieve order?",
-        ans : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+        ans : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
         arrowDown : arrowdown,
         arrowUp : arrowup
     }
@@ -379,17 +383,4 @@ export const footerLinks = [
         },
     ],
     },
-    // {
-    //     title: "Partner",
-    //     links: [
-    //     {
-    //         name: "Our Partner",
-    //         link: "https://www.Metalink.com/our-partner/",
-    //     },
-    //     {
-    //         name: "Become a Partner",
-    //         link: "https://www.Metalink.com/become-a-partner/",
-    //     },
-    //     ],
-    // },
 ];

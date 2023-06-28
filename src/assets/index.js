@@ -38,8 +38,10 @@ import bolt from './bolt.svg';
 import check from './check.png'
 import checked from './register.png'
 import verified from './verified.svg'
+import logo from './logo.svg'
 
 export{
+    logo,
     verified,
     checked,
     check,
