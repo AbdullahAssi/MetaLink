@@ -85,6 +85,7 @@ body {
     /* use position: relative; so that BG is only for .btn */
   position: relative;
   isolation: isolate;
+  z-index: 5;
   display: inline-grid;
   place-content: center;
   padding: .5em 1.5em;
@@ -194,6 +195,11 @@ body {
   color: #fff;
 }
 
+@media (max-width:564px){
+  .btn{
+    font-size: 10px;
+  }
+}
 
 body::-webkit-scrollbar {
   width:.61rem;

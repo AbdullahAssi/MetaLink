@@ -5,8 +5,8 @@ import { navLinks } from '../constants'
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
     return (
-        <nav className='w-full  p-5 lg:px-20 lg:py-10 fixed top-0 flex justify-between items-center
-        bg-blue-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 '>
+        <nav className='w-full  p-5 lg:px-20 lg:py-10 fixed top-0 flex justify-between items-center 
+        bg-blue-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10'>
             <img src={logo} alt="logo" className='w-[124px] h-[32px]' />
             
             <ul className=' list-none sm:flex hidden justify-end items-center flex-1'>

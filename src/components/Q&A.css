@@ -67,6 +67,7 @@
 @media (max-width: 564px){
     .qa{
         height: 130vh;
+        margin-top: 3rem;
         padding: 20px;
     }
     .title{
