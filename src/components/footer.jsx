@@ -1,6 +1,4 @@
-import logo from '../Assets/logo.svg';
-import playstore from '../Assets/playstore.png';
-import { appstore } from '../assets';
+import {logo, playstore, appstore } from '../assets';
 import { footerLinks} from "../constants";
 
 const Footer = () => (
