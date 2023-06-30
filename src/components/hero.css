@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     /* flex-direction: column; */
 }
 .hero_heading{
@@ -16,12 +17,11 @@
 
 @media  (max-width:764px){
     .Hero_container{
-        margin-top: 18rem;
-        flex-direction: column-reverse;
+        padding: 2rem;
     }
     .hero_heading{
-        text-align: start;
-        align-items: start;
+        text-align: center;
+        align-items: center;
 
     }
 }
