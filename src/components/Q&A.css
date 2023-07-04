@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    height: 100vh;
 }
 /* .wrapper{
     display: flex;
@@ -52,21 +51,8 @@
     transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 
-@media screen and (max-width: 3840px) {
-    .qa {
-        height: 40vh;
-    }
-}
-
-@media (max-width: 1284px){
-    .qa{
-        height: 110vh;
-    }
-}
-
 @media (max-width: 564px){
     .qa{
-        height: 100vh;
         margin-top: 3rem;
         padding: 20px;
     }
@@ -76,4 +62,4 @@
     .content{
         font-size: 13px;
     }
-}
+} 
